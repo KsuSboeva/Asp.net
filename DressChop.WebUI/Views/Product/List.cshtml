@@ -1,0 +1,21 @@
+﻿@using DressChop.Domain.Entities;
+
+
+
+@model IEnumerable<Product>
+
+@{
+    ViewBag.Title = "Товары";
+}
+
+@foreach (Product p in @Model)
+{
+    <div>
+        <h3>@p.Name</h3>
+        <p>@p.Type</p>
+        <h4>@p.Price.ToString("#$")</h4>
+    </div>
+    
+}
+<p>hghghgrgij</p>
+
